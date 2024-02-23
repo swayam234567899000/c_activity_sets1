@@ -1,0 +1,25 @@
++l
+1	//2. Write a C program to add two numbers.
+2	#include<stdio.h>
+3	int main()
+4	{
+5	    int a,b,sum;
+6	    printf("enter the numbers:\n");
+7	    scanf("%d %d",&a,&b);
+8	    sum=a+b;
+9	    printf("The sum of two numbers is %d:",sum);
+10	    return 0;
++l
+11	    
+12	    
+13	}
++l
+Line number 14 out of range; c:\Users\HP\c_activity_sets1\set01\problem02.c has 13 lines.
++r
+Starting program: c:\Users\HP\c_activity_sets1\set01/./problem02.exe 
+[New Thread 20172.0x1078]
+[New Thread 20172.0x54c0]
+[Inferior 1 (process 20172) exited normally]
++s
+The program is not being run.
++q
