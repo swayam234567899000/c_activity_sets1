@@ -1,0 +1,13 @@
++git add .
+Undefined command: "git".  Try "help".
++git commit -m "committed 2/27/2024, 2:45:34 PM"
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".
++cd "c:\Users\HP\c_activity_sets1\set01"
+"c:\Users\HP\c_activity_sets1\set01": Invalid argument.
++gcc -g "c:\Users\HP\c_activity_sets1\set01\problem08.c" -o "c:\Users\HP\c_activity_sets1\set01\problem08.exe" 2>&1
+Undefined command: "gcc".  Try "help".
++"c:\Users\HP\c_activity_sets1\set01\problem08.exe"
+Undefined command: "".  Try "help".
++q
