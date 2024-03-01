@@ -23,7 +23,7 @@ float square_root(float n)
     while(conv>0.0001)
     {
         x=(x+n/x)/2;
-        conv=x*x-n;
+        conv=x*x-n; 
     }
     return x;
 }
