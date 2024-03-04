@@ -1,33 +1,35 @@
-#include<stdio.h>
-float input();
-float square_root(float n);
-void output(float n, float sqrroot);
-int main()
-{
-    float n=input();
-    float sqrroot=square_root(n);
-    output(n,sqrroot);
-    return 0;
+// Write a C program to find the sum of _n_ complex numbers
+#include <stdio.h>
+struct Complex {
+    float real;
+    float imag;
+};
+struct Complex addComplex(struct Complex num1, struct Complex num2) {
+    struct Complex result;
+    result.real = num1.real + num2.real;
+    result.imag = num1.imag + num2.imag;
+    return result;
 }
-float input()
-{
-    float n;
-    printf("Enter a number\n");
-    scanf("%f",&n);
-    return n;
-}
-float square_root(float n)
-{
-    float x=n/2;
-    float conv=1;
-    while(conv>0.0001)
-    {
-        x=(x+n/x)/2;
-        conv=x*x-n; 
+
+int main() {
+    int n;
+     printf("Enter the number of complex numbers: ");
+    scanf("%d", &n);
+    struct Complex numbers[n];
+    printf("Enter the real and imaginary parts of each complex number:\n");
+    for (int i = 0; i < n; i++) {
+        printf("Complex number %d:\n", i + 1);
+        printf("Real part: ");
+        scanf("%f", &numbers[i].real);
+        printf("Imaginary part: ");
+        scanf("%f", &numbers[i].imag);
     }
-    return x;
-}
-void output(float n, float sqrroot)
-{
-    printf("The square root of the %f is %f",n,sqrroot);
+    struct Complex sum;
+    sum.real = 0;
+    sum.imag = 0;
+    for (int i = 0; i < n; i++) {
+        sum = addComplex(sum, numbers[i]);
+    }
+    printf("\nSum of the complex numbers: %.2f + %.2fi\n", sum.real, sum.imag);
+    return 0;
 }
